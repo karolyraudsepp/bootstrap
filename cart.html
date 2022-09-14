@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ee">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Ostukorv</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- minu CSS -->
+    <link rel="stylesheet" href="custom.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- päis -->
+    <header class="py-2">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 my-3 text-center">
+            <img src="logo2.png" width="50%" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- navigatsioon -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Uued tooted</a></li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link"
+              href="#"
+              id="navbarDropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Vannitooted</a
+            >
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Vannisoolad</a>
+              <a class="dropdown-item" href="#">Vannipiimad</a>
+              <a class="dropdown-item" href="#">Vannipommid</a>
+              <a class="dropdown-item" href="list.html"
+                >Seebid ja du&scaron;igeelid</a
+              >
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link"
+              href="#"
+              id="navbarDropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Kehahooldus</a
+            >
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Kehakreemid</a>
+              <a class="dropdown-item" href="#">Keha&otilde;lid</a>
+              <a class="dropdown-item" href="#">Kehakoorijad</a>
+              <a class="dropdown-item" href="#">Deodorandid</a>
+              <a class="dropdown-item" href="#">K&auml;te ja jalgade hooldus</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link"
+              href="#"
+              id="navbarDropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >N&auml;ohooldus</a
+            >
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Puhastus ja toniseerimine</a>
+              <a class="dropdown-item" href="#">Niisutus ja toitmine</a>
+              <a class="dropdown-item" href="#">Koorijad ja maskid</a>
+            </div>
+          </li>
+        </ul>
+        <!-- search -->
+        <form class="form-inline m-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Otsi"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-white my-2 my-sm-0" type="submit">
+            <svg class="lnr lnr-magnifier">
+              <use xlink:href="#lnr-magnifier"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+      <!-- cart -->
+      <a href="cart.html"
+        ><button class="btn btn-dark my-2 my-sm-0" type="submit">
+          <svg class="lnr lnr-cart">
+            <use xlink:href="#lnr-cart"></use>
+          </svg></button
+      ></a>
+    </nav>
+    <section>
+      <!-- breadcrumb -->
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb bg-white my-2">
+          <li class="breadcrumb-item"><a href="index.html">Avaleht</a></li>
+          <li class="breadcrumb-item active">Ostukorv</li>
+        </ol>
+      </nav>
+    </section>
+    <!-- ostukorv -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 d-flex align-items-start flex-column">
+            <div class="mb-auto p-2"><h4>Ostukorvis on 1 toode</h4></div>
+            <div class="mb-auto p-2 row">
+              <div class="col-lg-6">
+                <img src="soap.png" width="100%" />
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-lg-12">
+              <div class="card">
+                <div class="row">
+                  <div class="col-lg-5">
+                    <div class="row px-2">
+                      <div class="form-group col-md-20">
+                        <label class="form-control-label">Firstname</label>
+                        <input
+                          type="text"
+                          id="fname"
+                          name="fname"
+                          placeholder="Firstname"
+                        />
+                      </div>
+                      <div class="form-group col-md-20">
+                        <label class="form-control-label">Lastname</label>
+                        <input
+                          type="text"
+                          id="lname"
+                          name="lname"
+                          placeholder="Lastname"
+                        />
+                      </div>
+                    </div>
+                    <div class="row px-2">
+                      <div class="form-group col-md-20">
+                        <label class="form-control-label">Address</label>
+                        <input
+                          type="text"
+                          id="add"
+                          name="add"
+                          placeholder="Address"
+                        />
+                      </div>
+                      <div class="form-group col-md-20">
+                        <label for="example">Delivery</label>
+                        <select class="form-control" id="example">
+                          <option>Free</option>
+                          <option>Courier</option>
+                          <option>Parchel machine</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="btn-block btn-blue">Save</button>
+              </div>
+            </div>
+          </div>
+
+          <!--CHECKOUT-->
+          <div class="row justify-content-center">
+            <div class="col-lg-12">
+              <div class="card">
+                <div class="row">
+                  <div class="col-lg-3 radio-group">
+                    <div class="row d-flex px-3 radio">
+                      <img class="pay" src="https://i.imgur.com/WIAP9Ku.jpg" />
+                      <p class="my-auto">Credit Card</p>
+                    </div>
+                    <div class="row d-flex px-3 radio gray">
+                      <img class="pay" src="https://i.imgur.com/OdxcctP.jpg" />
+                      <p class="my-auto">Debit Card</p>
+                    </div>
+                    <div class="row d-flex px-3 radio gray mb-3">
+                      <img class="pay" src="https://i.imgur.com/cMk1MtK.jpg" />
+                      <p class="my-auto">PayPal</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-5">
+                    <div class="row px-2">
+                      <div class="form-group col-md-6">
+                        <label class="form-control-label">Name on Card</label>
+                        <input
+                          type="text"
+                          id="cname"
+                          name="cname"
+                          placeholder="Johnny Doe"
+                        />
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label class="form-control-label">Card Number</label>
+                        <input
+                          type="text"
+                          id="cnum"
+                          name="cnum"
+                          placeholder="1111 2222 3333 4444"
+                        />
+                      </div>
+                    </div>
+                    <div class="row px-2">
+                      <div class="form-group col-md-6">
+                        <label class="form-control-label"
+                          >Expiration Date</label
+                        >
+                        <input
+                          type="text"
+                          id="exp"
+                          name="exp"
+                          placeholder="MM/YYYY"
+                        />
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label class="form-control-label">CVV</label>
+                        <input
+                          type="text"
+                          id="cvv"
+                          name="cvv"
+                          placeholder="***"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 mt-2">
+                    <div class="row d-flex justify-content-between px-4">
+                      <p class="mb-1 text-left">Subtotal</p>
+                      <h6 class="mb-1 text-right">19.99€</h6>
+                    </div>
+                    <div class="row d-flex justify-content-between px-4">
+                      <p class="mb-1 text-left">Shipping</p>
+                      <h6 class="mb-1 text-right">0€</h6>
+                    </div>
+                    <div
+                      class="row d-flex justify-content-between px-4"
+                      id="tax"
+                    >
+                      <p class="mb-1 text-left">Total (tax included)</p>
+                      <h6 class="mb-1 text-right">19.99€</h6>
+                    </div>
+                    <button class="btn-block btn-blue">
+                      <span>
+                        <span id="checkout">Checkout</span>
+                        <span id="check-amt">15.99€</span>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- jalus -->
+    <footer class="mainfooter" role="contentinfo">
+      <div class="footer-middle">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <!--Column1-->
+              <div class="footer-pad">
+                <h4>Contact</h4>
+                <ul class="list-unstyled">
+                  <li><a href="#">Tel: 5555 5555</a></li>
+                  <li><a href="#">Email: email@email.com</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6"></div>
+            <div class="col-md-3 col-sm-6"></div>
+            <div class="col-md-3">
+              <h4>Follow Us</h4>
+              <a href="" class="text-black me-4">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="" class="text-black me-4">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="" class="text-black me-4">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="" class="text-black me-4">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="" class="text-black me-4">
+                <i class="fab fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="" class="text-black me-4">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 copy">
+              <p class="text-center">&copy; Copyright 2022</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+  </body>
+</html>

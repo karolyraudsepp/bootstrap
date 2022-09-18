@@ -1,83 +1,86 @@
 .lnr {
-    display: inline-block;
-    fill: currentColor;
-    width: 1em;
-    height: 1em;
-    vertical-align: -0.05em;
-    stroke-width: 2;
+  display: inline-block;
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.05em;
+  stroke-width: 2;
+}
+.jumbotron {
+  background-image: url("https://www.floraqueen.com/blog/wp-content/uploads/2017/11/Untitled-design-3-1.jpg");
 }
 
 a {
-    color: white;
+  color: white;
 }
 
 .lnr-cart {
-    width: 1.5em;
-    height: 1.5em;
+  width: 1.5em;
+  height: 1.5em;
 }
 
 .lnr-magnifier {
-    color: #000000;   
+  color: #000000;
 }
 
 .navbar-nav li {
-    margin-right: 3em;
+  margin-right: 3em;
 }
 
 section {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 .h {
-    text-align: center;
+  text-align: center;
 }
 
 .card-body {
-    align-content: center;
+  align-content: center;
 }
 
 footer {
-    background: pink;
-    color: black;
-    margin-top:100px;
-  }
-  
-  footer a {
-    color: black;
-    font-size: 14px;
-    transition-duration: 0.2s;
-  }
-  
-  footer a:hover {
-    color: gray;
-    text-decoration: none;
-  }
-  
-  .copy {
-    font-size: 12px;
-    padding: 10px;
-    border-top: 1px solid black;
-  }
-  
-  .footer-middle {
-    padding-top: 2em;
-    color: black;
-  }
-
-.justify{
-    display: flex;
-    justify-content: end;
+  background: pink;
+  color: black;
+  margin-top: 100px;
 }
 
-.justify-center{
-    display: flex;
-    justify-content: center;
+footer a {
+  color: black;
+  font-size: 14px;
+  transition-duration: 0.2s;
+}
+
+footer a:hover {
+  color: gray;
+  text-decoration: none;
+}
+
+.copy {
+  font-size: 12px;
+  padding: 10px;
+  border-top: 1px solid black;
+}
+
+.footer-middle {
+  padding-top: 2em;
+  color: black;
+}
+
+.justify {
+  display: flex;
+  justify-content: end;
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
 }
 
 .row {
-    display: flex;
+  display: flex;
 }
-  
+
 .column {
   display: flex;
   flex: 50%;
@@ -86,90 +89,86 @@ footer {
   padding-right: 2%;
 }
 
-
-
-
 .card {
-    margin: 40px 0px;
-    padding: 40px 50px;
-    border-radius: 20px;
-    border: none;
-    box-shadow: 1px 5px 10px 1px rgba(0,0,0,0.2);
+  margin: 40px 0px;
+  padding: 40px 50px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.2);
 }
 
-input, textarea {
-    background-color: #F3E5F5;
-    padding: 8px 15px 8px 15px;
-    width: 100%;
-    border-radius: 5px !important;
-    box-sizing: border-box;
-    border: 1px solid #F3E5F5;
-    font-size: 15px !important;
-    color: #000 !important;
-    font-weight: 300;
+input,
+textarea {
+  background-color: #f3e5f5;
+  padding: 8px 15px 8px 15px;
+  width: 100%;
+  border-radius: 5px !important;
+  box-sizing: border-box;
+  border: 1px solid #f3e5f5;
+  font-size: 15px !important;
+  color: #000 !important;
+  font-weight: 300;
 }
 
-input:focus, textarea:focus {
-    -moz-box-shadow: none !important;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-    border: 1px solid #9FA8DA;
-    outline-width: 0;
-    font-weight: 400;
+input:focus,
+textarea:focus {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: 1px solid #9fa8da;
+  outline-width: 0;
+  font-weight: 400;
 }
 
 button:focus {
-    -moz-box-shadow: none !important;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-    outline-width: 0;
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  outline-width: 0;
 }
 
 .pay {
-    width: 80px;
-    height: 40px;
-    border-radius: 5px;
-    border: 1px solid #673AB7;
-    margin: 10px 20px 10px 0px;
-    cursor: pointer;
-    box-shadow: 1px 5px 10px 1px rgba(0,0,0,0.2);
+  width: 80px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #673ab7;
+  margin: 10px 20px 10px 0px;
+  cursor: pointer;
+  box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.2);
 }
 
-
 #tax {
-    border-top: 1px lightgray solid;
-    margin-top: 10px;
-    padding-top: 10px;
+  border-top: 1px lightgray solid;
+  margin-top: 10px;
+  padding-top: 10px;
 }
 
 .btn-blue {
-    border: none;
-    border-radius: 10px;
-    background-color: pink;
-    color: #fff;
-    padding: 8px 15px;
-    margin: 20px 0px;
-    cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background-color: pink;
+  color: #fff;
+  padding: 8px 15px;
+  margin: 20px 0px;
+  cursor: pointer;
 }
 
 .btn-blue:hover {
-    background-color: #311B92;
-    color: #fff;
+  background-color: #311b92;
+  color: #fff;
 }
 
 #checkout {
-    float: left;
+  float: left;
 }
 
 #check-amt {
-    float: right;
+  float: right;
 }
 
 @media screen and (max-width: 768px) {
-    .card {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
+  .card {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
-  
